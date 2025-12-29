@@ -10,3 +10,16 @@ const techcoolPeople = [
 ];
 
 // เริ่มเขียนโค้ดตรงนี้
+// รวมก่อน ใช้ []... 
+// ใช้ ฟิลเตอร์ แบบต้องประกาศตัวแปรใหม่ 
+// แสดงผล
+
+let allPeople = [...techupPeople,...techcoolPeople];
+// console.log(allPeople);
+let result = allPeople.filter(function (person){
+    return person.age < 20;
+});
+
+console.log(result);
+
+
